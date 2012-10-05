@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NationBuilder Challenge</title>
+    <meta name="author" content="Rich Goldman <rich@comfypants.org>">
+
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-responsive.css">
+    <link rel="stylesheet" href="stylesheets/index.css" media="all">
+
+    <script src="javascripts/vendor/jquery.js"></script>
+    <script src="javascripts/vendor/underscore.js"></script>
+    <script src="javascripts/vendor/underscore.string.js"></script>
+    <script src="javascripts/vendor/backbone.js"></script>
+    <script src="javascripts/chat-events.js"></script>
+
+    <script type="text/template" id="list-view-template">
+      <h2>Chat Events</h2>
+      <div class="chat-events-list"></div>
+    </script>
+
+    <script type="text/template" id="chat-event-template">
+      <span class="date"> DATE: <%= date %></span>
+      <span class="hour"> HOUR: <%= hour %></span>
+      <span class="minute"> MINUTE: <%= minute %></span>
+      <span class="user-handle"> USER_HANDLE: <%= user_handle %></span>
+      <span class="entry-type"> EVENT TYPE: <%= event_type %></span>
+      <span class="entry-id"> EVENT ID: <%= event_id %></span>
+    </script>
+
+    <script type="text/template" id="enter-room-template">
+      <div class="time">
+        <pre><%= hour %>:<%= minute %></pre>
+      </div>
+      <div class="action">
+        <span class="user-handle"><%= user_handle %></span> has entered.
+      </div>
+    </script>
+
+    <script type="text/template" id="comment-template">
+      <div class="time">
+        <pre><%= hour %>:<%= minute %></pre>
+      </div>
+      <div class="action">
+        <span class="user-handle"><%= user_handle %></span> says: "<%= comment %>"
+      </div>
+    </script>
+
+    <script type="text/template" id="high-five-template">
+      <div class="time">
+        <pre><%= hour %>:<%= minute %></pre>
+      </div>
+      <div class="action">
+        <span class="user-handle"><%= user_handle %></span>
+        high-fives
+        <span class="user-handle"><%= high_fivee %></span>.
+      </div>
+    </script>
+
+    <script type="text/template" id="exit-room-template">
+      <div class="time">
+        <pre><%= hour %>:<%= minute %></pre>
+      </div>
+      <div class="action">
+        <span class="user-handle"><%= user_handle %></span> has left the building.
+      </div>
+    </script>
+
+    <!--
+    <script type="text/template" id="aggregates-template">
+      <div class="event-type">Entered Room</div>
+      <div class="aggregate"><%= entered_room_count %></div>
+    </script>
+    -->
+
+
+    <script type="application/javascript">
+      $(function() {
+        window.chatEvents.fetch();
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <!--<div id="aggregates-container"></div>-->
+    <div id="chat-events-container"></div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+body {
+	padding: 50px;
+}
+h2 {
+	text-align: center;
+}
+.chat-events-list {
+	margin-left: 100px;
+}
+.chat-event {
+	clear: both;
+}
+.time {
+	clear: left;
+	float: left;
+	width: 60px;
+	text-align: center;
+}
+.action {
+	padding: 10px;
+	float: left;
+}
+.user-handle {
+	font-weight: bold;
+}

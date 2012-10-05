@@ -1,0 +1,114 @@
+[
+    {
+        "event_id": 1,
+        "event_type": "enter_room",
+        "user_handle": "Kyle",
+        "date": "/Date(1224043200000)/"
+    },
+    {
+        "event_id": 2,
+        "event_type": "enter_room",
+        "user_handle": "Cartman",
+        "date": "/Date(1224043300000)/"
+    },
+    {
+        "event_id": 3,
+        "event_type": "comment",
+        "user_handle": "Cartman",
+        "date": "/Date(1224043400000)/",
+        "comment": "This sucks, I'm going home!"
+    },
+    {
+        "event_id": 4,
+        "event_type": "exit_room",
+        "user_handle": "Cartman",
+        "date": "/Date(1224043450000)/"
+    },
+    {
+        "event_id": 5,
+        "event_type": "enter_room",
+        "user_handle": "Stan",
+        "date": "/Date(1224043500000)/"
+    },
+    {
+        "event_id": 6,
+        "event_type": "high_five",
+        "user_handle": "Stan",
+        "date": "/Date(1224043600000)/",
+        "high_fivee": "Kyle"
+    },
+    {
+        "event_id": 7,
+        "event_type": "comment",
+        "user_handle": "Kyle",
+        "date": "/Date(1224043700000)/",
+        "comment": "High-fives are destroying the environment."
+    },
+    {
+        "event_id": 8,
+        "event_type": "enter_room",
+        "user_handle": "Butters",
+        "date": "/Date(1224043800000)/"
+    },
+    {
+        "event_id": 9,
+        "event_type": "comment",
+        "user_handle": "Butters",
+        "date": "/Date(1224043900000)/",
+        "comment": "What's up, fellas?" 
+    },
+    {
+        "event_id": 10,
+        "event_type": "high_five",
+        "user_handle": "Butters",
+        "date": "/Date(1224044000000)/",
+        "high_fivee": "Stan"
+    },
+    {
+        "event_id": 11,
+        "event_type": "high_five",
+        "user_handle": "Butters",
+        "date": "/Date(1224044100000)/",
+        "high_fivee": "Kyle"
+    },
+    {
+        "event_id": 12,
+        "event_type": "enter_room",
+        "user_handle": "Timmy",
+        "date": "/Date(1224044200000)/"
+    },
+    {
+        "event_id": 13,
+        "event_type": "comment",
+        "user_handle": "Timmy",
+        "date": "/Date(1224044300000)/",
+        "comment": "Timmy! Timmy Timmy!"
+    },
+    {
+        "event_id": 14,
+        "event_type": "high_five",
+        "user_handle": "Butters",
+        "date": "/Date(1224044400000)/",
+        "high_fivee": "Timmy"
+    },
+    {
+        "event_id": 15,
+        "event_type": "high_five",
+        "user_handle": "Stan",
+        "date": "/Date(1224044500000)/",
+        "high_fivee": "Timmy"
+    },
+    {
+        "event_id": 16,
+        "event_type": "high_five",
+        "user_handle": "Kyle",
+        "date": "/Date(1224044600000)/",
+        "high_fivee": "Timmy"
+    },
+    {
+        "event_id": 16,
+        "event_type": "exit_room",
+        "user_handle": "Butters",
+        "date": "/Date(1224044700000)/"
+    }    
+]
